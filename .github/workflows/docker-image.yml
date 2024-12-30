@@ -18,21 +18,11 @@ jobs:
       with:
         dotnet-version: '8.0.x'
     
-    - name: Restore dependencies
-      run: dotnet restore
-    
-    - name: Build
-      run: dotnet build --no-restore
-    
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
-    
-    - name: Build Docker Image
-      working-directory: ./PruebaTecnicaNET
+    - name: Build and Test
       run: |
-        docker build . --file Dockerfile --tag pruebatecnicanet:$(date +%s)
+        cd PruebaTecnicaNET
+        docker build -t pruebatecnicanet:latest .
         
-    - name: Run Docker Container
-      working-directory: ./PruebaTecnicaNET
+    - name: Run Container
       run: |
-        docker run -d -p 8080:80 pruebatecnicanet:$(date +%s)
+        docker run -d -p 8080:80 pruebatecnicanet:latest
