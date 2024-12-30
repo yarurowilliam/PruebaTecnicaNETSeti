@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaNET", "PruebaTecnicaNET\PruebaTecnicaNET.csproj", "{DE42B463-D59B-43DC-BE79-CEB070B26C24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaNETTests", "PruebaTecnicaNETTests}\PruebaTecnicaNETTests.csproj", "{6395B91B-2E62-46A5-A0CA-D804E8E03A08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnicaNETTests", "PruebaTecnicaNETTests\PruebaTecnicaNETTests.csproj", "{6395B91B-2E62-46A5-A0CA-D804E8E03A08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
