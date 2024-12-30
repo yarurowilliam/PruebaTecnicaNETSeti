@@ -28,9 +28,11 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     
     - name: Build Docker Image
+      working-directory: ./PruebaTecnicaNET
       run: |
         docker build . --file Dockerfile --tag pruebatecnicanet:$(date +%s)
         
     - name: Run Docker Container
+      working-directory: ./PruebaTecnicaNET
       run: |
         docker run -d -p 8080:80 pruebatecnicanet:$(date +%s)
